@@ -3,9 +3,12 @@ package server
 import (
 	"database/sql"
 	"fmt"
+	"net/http"
 
 	"gitlab.com/ServerUtility/dbservice"
+	"gitlab.com/ServerUtility/foundation"
 	"gitlab.com/ServerUtility/game"
+	"gitlab.com/ServerUtility/messagehandle"
 	"gitlab.com/ServerUtility/restfult"
 	"gitlab.com/ServerUtility/socket"
 	// "gitlab.com/ServerUtility/myhttp"
@@ -85,4 +88,13 @@ func (s *Service) Log(log string) {
 // ErrorLog ...
 func (s *Service) ErrorLog(log string) {
 	fmt.Println(log)
+}
+
+// HTTPResponse Respond to cliente
+func (s *Service) HTTPResponse(httpconn http.ResponseWriter, data interface{}, err messagehandle.ErrorMsg) {
+	result := make(map[string]interface{})
+	result["data"] = data
+	result["error"] = err
+	fmt.Fprint(httpconn, foundation.JSONToString(result))
+	messagehandle.LogPrintln("HTTPResponse:", foundation.JSONToString(result))
 }
