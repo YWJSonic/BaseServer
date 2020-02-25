@@ -5,17 +5,17 @@ import (
 	"fmt"
 	"net/http"
 
-	"gitlab.com/ServerUtility/dbservice"
-	"gitlab.com/ServerUtility/foundation"
-	"gitlab.com/ServerUtility/game"
-	"gitlab.com/ServerUtility/messagehandle"
-	"gitlab.com/ServerUtility/restfult"
-	"gitlab.com/ServerUtility/socket"
-	// "gitlab.com/ServerUtility/myhttp"
-	// "gitlab.com/baseserver/dbservice"
-	// "gitlab.com/baseserver/game"
-	// "gitlab.com/baseserver/restfult"
-	// "gitlab.com/baseserver/socket"
+	"githab.com/ServerUtility/dbservice"
+	"githab.com/ServerUtility/foundation"
+	"githab.com/ServerUtility/game"
+	"githab.com/ServerUtility/messagehandle"
+	"githab.com/ServerUtility/restfult"
+	"githab.com/ServerUtility/socket"
+	// "githab.com/ServerUtility/myhttp"
+	// "githab.com/baseserver/dbservice"
+	// "githab.com/baseserver/game"
+	// "githab.com/baseserver/restfult"
+	// "githab.com/baseserver/socket"
 )
 
 // IServer ...

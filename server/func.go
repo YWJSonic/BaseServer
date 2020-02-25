@@ -3,8 +3,8 @@ package server
 import (
 	"sync"
 
-	"gitlab.com/ServerUtility/dbservice"
-	// "gitlab.com/baseserver/dbservice"
+	"githab.com/ServerUtility/dbservice"
+	// "githab.com/baseserver/dbservice"
 )
 
 // NewSetting ..

@@ -3,12 +3,12 @@ package server
 import (
 	"sync"
 
-	"gitlab.com/ServerUtility/cron"
-	"gitlab.com/ServerUtility/dbservice"
-	"gitlab.com/ServerUtility/foundation"
-	// "gitlab.com/ServerUtility/cron"
-	// "gitlab.com/ServerUtility/foundation"
-	// "gitlab.com/baseserver/dbservice"
+	"githab.com/ServerUtility/cron"
+	"githab.com/ServerUtility/dbservice"
+	"githab.com/ServerUtility/foundation"
+	// "githab.com/ServerUtility/cron"
+	// "githab.com/ServerUtility/foundation"
+	// "githab.com/baseserver/dbservice"
 )
 
 // Setting ...
