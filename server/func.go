@@ -3,8 +3,7 @@ package server
 import (
 	"sync"
 
-	"githab.com/ServerUtility/dbservice"
-	// "githab.com/baseserver/dbservice"
+	"github.com/YWJSonic/ServerUtility/dbservice"
 )
 
 // NewSetting ..

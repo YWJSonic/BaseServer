@@ -5,17 +5,12 @@ import (
 	"fmt"
 	"net/http"
 
-	"githab.com/ServerUtility/dbservice"
-	"githab.com/ServerUtility/foundation"
-	"githab.com/ServerUtility/game"
-	"githab.com/ServerUtility/messagehandle"
-	"githab.com/ServerUtility/restfult"
-	"githab.com/ServerUtility/socket"
-	// "githab.com/ServerUtility/myhttp"
-	// "githab.com/baseserver/dbservice"
-	// "githab.com/baseserver/game"
-	// "githab.com/baseserver/restfult"
-	// "githab.com/baseserver/socket"
+	"github.com/YWJSonic/ServerUtility/dbservice"
+	"github.com/YWJSonic/ServerUtility/foundation"
+	"github.com/YWJSonic/ServerUtility/igame"
+	"github.com/YWJSonic/ServerUtility/messagehandle"
+	"github.com/YWJSonic/ServerUtility/restfult"
+	"github.com/YWJSonic/ServerUtility/socket"
 )
 
 // IServer ...
@@ -34,7 +29,7 @@ type Service struct {
 	Setting  Setting
 	Restfult *restfult.Service
 	Socket   *socket.Service
-	IGame    game.IGame
+	IGame    igame.IGame
 	DBs      map[string]*dbservice.DB
 }
 
