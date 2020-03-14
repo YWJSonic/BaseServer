@@ -5,7 +5,7 @@ import (
 
 	"github.com/YWJSonic/ServerUtility/dbservice"
 	"github.com/YWJSonic/ServerUtility/foundation"
-	"github.com/robfig/cron/v3"
+	"github.com/robfig/cron"
 )
 
 // Setting ...

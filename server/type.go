@@ -9,8 +9,10 @@ import (
 	"github.com/YWJSonic/ServerUtility/foundation"
 	"github.com/YWJSonic/ServerUtility/igame"
 	"github.com/YWJSonic/ServerUtility/messagehandle"
+	"github.com/YWJSonic/ServerUtility/myhttp"
 	"github.com/YWJSonic/ServerUtility/restfult"
 	"github.com/YWJSonic/ServerUtility/socket"
+	"github.com/YWJSonic/ServerUtility/thirdparty/transaction"
 )
 
 // IServer ...
@@ -29,6 +31,8 @@ type Service struct {
 	Setting  Setting
 	Restfult *restfult.Service
 	Socket   *socket.Service
+	HTTPConn *myhttp.Service
+	Transfer *transaction.Service
 	IGame    igame.IGame
 	DBs      map[string]*dbservice.DB
 }
