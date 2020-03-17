@@ -40,6 +40,8 @@ type Service struct {
 // Launch server start
 func (s *Service) Launch(setting Setting) {
 	s.Setting = setting
+	s.HTTPConn = &myhttp.Service{}
+	s.Transfer = transaction.NewTransaction(setting.TransferURL, s.HTTPConn)
 }
 
 // LaunchRestfult service start

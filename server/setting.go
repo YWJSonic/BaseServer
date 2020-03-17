@@ -22,6 +22,7 @@ type Setting struct {
 	MaintainFinishTime string
 	MaintainStartTime  string
 	RedisURL           string
+	TransferURL        string
 }
 
 // RestfultAdderss ...
@@ -78,6 +79,9 @@ func (s *Setting) SetData(data map[string]interface{}) {
 	}
 	if value, ok := data["SocketPORT"]; ok {
 		s.SocketPort = foundation.InterfaceToString(value)
+	}
+	if value, ok := data["TransferURL"]; ok {
+		s.TransferURL = foundation.InterfaceToString(value)
 	}
 }
 
