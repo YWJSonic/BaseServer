@@ -33,8 +33,9 @@ type Service struct {
 	Socket   *socket.Service
 	HTTPConn *myhttp.Service
 	Transfer *transaction.Service
-	IGame    igame.IGame
-	DBs      map[string]*dbservice.DB
+
+	IGame igame.IGame
+	DBs   map[string]*dbservice.DB
 }
 
 // Launch server start

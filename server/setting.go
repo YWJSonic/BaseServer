@@ -23,6 +23,7 @@ type Setting struct {
 	MaintainStartTime  string
 	RedisURL           string
 	TransferURL        string
+	ServerMod          string
 }
 
 // RestfultAdderss ...
@@ -82,6 +83,12 @@ func (s *Setting) SetData(data map[string]interface{}) {
 	}
 	if value, ok := data["TransferURL"]; ok {
 		s.TransferURL = foundation.InterfaceToString(value)
+	}
+	if value, ok := data["TransferURL"]; ok {
+		s.TransferURL = foundation.InterfaceToString(value)
+	}
+	if value, ok := data["ServerMod"]; ok {
+		s.ServerMod = foundation.InterfaceToString(value)
 	}
 }
 
